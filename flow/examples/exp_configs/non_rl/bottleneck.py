@@ -13,8 +13,8 @@ DISABLE_TB = True
 
 # If set to False, ALINEA will control the ramp meter
 DISABLE_RAMP_METER = True
-INFLOW = 2300
-HORIZON = 1000
+INFLOW = 230*20
+HORIZON = 100
 
 vehicles = VehicleParams()
 vehicles.add(

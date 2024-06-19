@@ -1,0 +1,12 @@
+{
+    "unit_length": 150,
+    "inflow_edge_len": 30,
+    "main_lanes": 1,
+    "sub_lanes": 1,
+    "inout_lanes": 1,
+    "speed_limit_main": 20,
+    "speed_limit_sub": 10,
+    "speed_limit_extra": 25,
+    "flow_rate": 1200,
+    "road_mode": "without_right"
+}

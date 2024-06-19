@@ -21,7 +21,7 @@ vehicles.add(
         lane_change_mode="no_lc_safe",
     ),
     initial_speed=0,
-    num_vehicles=90)
+    num_vehicles=45)
 vehicles.add(
     veh_id="rl",
     acceleration_controller=(RLController, {}),
@@ -30,7 +30,7 @@ vehicles.add(
         speed_mode="obey_safe_speed",
     ),
     initial_speed=0,
-    num_vehicles=10)
+    num_vehicles=5)
 
 
 flow_params = dict(
@@ -58,7 +58,7 @@ flow_params = dict(
 
     # environment related parameters (see flow.core.params.EnvParams)
     env=EnvParams(
-        horizon=750,
+        horizon=7500,
         additional_params=ADDITIONAL_ENV_PARAMS
     ),
 

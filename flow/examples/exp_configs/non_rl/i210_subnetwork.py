@@ -26,11 +26,11 @@ WANT_DOWNSTREAM_BOUNDARY = True
 # whether to include vehicles on the on-ramp
 ON_RAMP = False
 # the inflow rate of vehicles (in veh/hr)
-INFLOW_RATE = 2050
+INFLOW_RATE = 1050 #2025
 # the speed of inflowing vehicles from the main edge (in m/s)
 INFLOW_SPEED = 25.5
 # horizon over which to run the env
-HORIZON = 1500
+HORIZON = 500 #1500
 # steps to run before follower-stopper is allowed to take control
 WARMUP_STEPS = 600
 

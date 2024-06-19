@@ -10,9 +10,7 @@ model to return a vehicle acceleration.
 """
 import math
 import numpy as np
-
 from flow.controllers.base_controller import BaseController
-
 
 class CFMController(BaseController):
     """CFM controller.

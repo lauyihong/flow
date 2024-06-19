@@ -10,6 +10,9 @@ import argparse
 import json
 import os
 import sys
+
+sys.path.append('../')
+sys.path.append('../flow')
 from time import strftime
 from copy import deepcopy
 
@@ -27,6 +30,7 @@ def parse_args(args):
     argparse.Namespace
         the output parser object
     """
+
     parser = argparse.ArgumentParser(
         formatter_class=argparse.RawDescriptionHelpFormatter,
         description="Parse argument used when running a Flow simulation.",
@@ -34,7 +38,7 @@ def parse_args(args):
 
     # required input parameters
     parser.add_argument(
-        'exp_config', type=str,
+        '--exp_config', type=str,
         help='Name of the experiment configuration file, as located in '
              'exp_configs/rl/singleagent or exp_configs/rl/multiagent.')
 
@@ -57,7 +61,6 @@ def parse_args(args):
         help='Directory with checkpoint to restore training from.')
 
     return parser.parse_known_args(args)[0]
-
 
 def run_model_stablebaseline(flow_params,
                              num_cpus=1,

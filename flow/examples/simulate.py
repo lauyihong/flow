@@ -7,6 +7,8 @@ import argparse
 import sys
 import json
 import os
+sys.path.append('../../')
+sys.path.append('../flow')
 from flow.core.experiment import Experiment
 
 from flow.core.params import AimsunParams
